@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
 import { Menu, Phone, Mail, Search, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -23,25 +22,42 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+// 1. Updated Data Structure with hrefs
 const menuData = [
   {
     title: "COURSES",
     items: [
-      "Building and Construction Trades",
-      "Civil Construction Design",
-      "Information Technology",
-      "Business and Management",
-      "Kitchen and Hospitality",
-      "Community and Health",
+      {
+        label: "Building and Construction Trades",
+        href: "/courses/building-construction",
+      },
+      { label: "Civil Construction Design", href: "/courses/civil-design" },
+      { label: "Information Technology", href: "/courses/it" },
+      { label: "Business and Management", href: "/courses/business" },
+      { label: "Kitchen and Hospitality", href: "/courses/hospitality" },
+      { label: "Community and Health", href: "/courses/health" },
     ],
   },
-  { title: "ADMISSIONS", items: ["Domestic", "International", "FAQs"] },
+  {
+    title: "ADMISSIONS",
+    items: [
+      { label: "Domestic", href: "/admissions/domestic" },
+      { label: "International", href: "/admissions/international" },
+      { label: "FAQs", href: "/faqs" },
+    ],
+  },
   {
     title: "STUDENT INFO",
-    items: ["Student Handbook", "Campus Life", "Orientation"],
+    items: [
+      { label: "Student Handbook", href: "/info/handbook" },
+      { label: "Campus Life", href: "/info/campus-life" },
+      { label: "Orientation", href: "/info/orientation" },
+    ],
   },
-  { title: "ABOUT US", items: ["Our Story", "Contact Us"] },
-  { title: "STUDENT LOGIN", items: ["Portal Access", "Canvas"] },
+  {
+    title: "ABOUT US",
+    href: "/about-us",
+  },
 ];
 
 export default function Navbar() {
@@ -62,7 +78,6 @@ export default function Navbar() {
       </div>
 
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo */}
         <Link href="/" className="flex flex-col uppercase shrink-0">
           <span className="text-xl font-black text-[#006666] leading-none">
             Fusion College
@@ -80,43 +95,49 @@ export default function Navbar() {
                   variant="ghost"
                   className="font-bold text-[#008080] hover:text-[#006666] hover:bg-transparent uppercase text-[13px] tracking-tight flex gap-1 group">
                   {menu.title}
-                  <ChevronDown
-                    size={14}
-                    className="transition-transform duration-200 group-data-[state=open]:rotate-180"
-                  />
+                  {menu.items && menu.items.length > 0 && (
+                    <ChevronDown
+                      size={14}
+                      className="transition-transform duration-200 group-data-[state=open]:rotate-180"
+                    />
+                  )}
                 </Button>
               </PopoverTrigger>
-              <PopoverContent
-                align="start"
-                sideOffset={20}
-                className="w-[280px] p-0 bg-black border-none rounded-none shadow-xl z-[110]">
-                <ul className="flex flex-col">
-                  {menu.items.map((item, index) => (
-                    <li
-                      key={item}
-                      className={
-                        index !== menu.items.length - 1
-                          ? "border-b border-white/10"
-                          : ""
-                      }>
-                      <Link
-                        href="#"
-                        className="block p-4 text-[13px] font-bold text-white hover:bg-[#008080] transition-colors">
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </PopoverContent>
+
+              {menu.items && menu.items.length > 0 && (
+                <PopoverContent
+                  align="start"
+                  sideOffset={20}
+                  className="w-[280px] p-0 bg-black border-none rounded-none shadow-xl z-[110]">
+                  <ul className="flex flex-col">
+                    {menu.items.map((item, index) => (
+                      <li
+                        key={item.label}
+                        className={
+                          index !== menu.items!.length - 1
+                            ? "border-b border-white/10"
+                            : ""
+                        }>
+                        <Link
+                          href={item.href}
+                          className="block p-4 text-[13px] font-bold text-white hover:bg-[#008080] transition-colors">
+                          {item.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </PopoverContent>
+              )}
             </Popover>
           ))}
 
-          <Button className="bg-[#008080] hover:bg-[#006666] text-white rounded-full px-8 py-5 font-bold uppercase text-sm ml-4">
-            Apply Now
+          <Button
+            asChild
+            className="bg-[#008080] hover:bg-[#006666] text-white rounded-full px-8 py-5 font-bold uppercase text-sm ml-4">
+            <Link href="/apply">Apply Now</Link>
           </Button>
         </div>
 
-        {/* Mobile Menu */}
         <div className="lg:hidden flex items-center gap-2">
           <Sheet>
             <SheetTrigger asChild>
@@ -133,24 +154,36 @@ export default function Navbar() {
               <Accordion type="single" collapsible className="w-full">
                 {menuData.map((menu, idx) => (
                   <AccordionItem value={`item-${idx}`} key={menu.title}>
-                    <AccordionTrigger className="text-[#008080] font-bold uppercase text-sm">
-                      {menu.title}
-                    </AccordionTrigger>
-                    <AccordionContent className="flex flex-col gap-2 pl-4">
-                      {menu.items.map((sub) => (
-                        <Link
-                          key={sub}
-                          href="#"
-                          className="py-2 text-sm text-slate-600 hover:text-[#008080]">
-                          {sub}
-                        </Link>
-                      ))}
-                    </AccordionContent>
+                    {menu.items && menu.items.length > 0 ? (
+                      <>
+                        <AccordionTrigger className="text-[#008080] font-bold uppercase text-sm">
+                          {menu.title}
+                        </AccordionTrigger>
+                        <AccordionContent className="flex flex-col gap-2 pl-4">
+                          {menu.items.map((sub) => (
+                            <Link
+                              key={sub.label}
+                              href={sub.href}
+                              className="py-2 text-sm text-slate-600 hover:text-[#008080]">
+                              {sub.label}
+                            </Link>
+                          ))}
+                        </AccordionContent>
+                      </>
+                    ) : (
+                      <Link
+                        href={menu.href || "#"}
+                        className="flex flex-1 items-center justify-between py-4 text-[#008080] font-bold uppercase text-sm hover:underline">
+                        {menu.title}
+                      </Link>
+                    )}
                   </AccordionItem>
                 ))}
               </Accordion>
-              <Button className="w-full bg-[#008080] mt-6 font-bold uppercase">
-                Apply Now
+              <Button
+                asChild
+                className="w-full bg-[#008080] mt-6 font-bold uppercase">
+                <Link href="/apply">Apply Now</Link>
               </Button>
             </SheetContent>
           </Sheet>
