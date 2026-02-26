@@ -17,13 +17,13 @@ const sliderData = [
   {
     id: 1,
     title: "Located in Your Dream City Sydney",
-    image: "/images/image-1.png",
+    image: "/images/image-12.jpeg",
     buttonText: "KNOW MORE",
   },
   {
     id: 2,
     title: "Our Experts Instruction for Your Bright Future",
-    image: "/images/image-2.png",
+    image: "/images/image-10.jpeg",
     buttonText: "KNOW MORE",
   },
 ];
@@ -45,7 +45,6 @@ export function HeroSlider() {
           {sliderData.map((slide) => (
             <CarouselItem key={slide.id} className="p-0">
               <div className="relative h-[500px] w-full flex items-center justify-end">
-                {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                   <Image
                     src={slide.image}
@@ -54,13 +53,11 @@ export function HeroSlider() {
                     className="object-cover"
                     priority
                   />
-                  {/* Subtle Dark Overlay */}
-                  <div className="absolute inset-0 bg-black/30" />
+                  <div className="absolute inset-0 bg-black/50" />
                 </div>
 
-                {/* Content Container - Right Aligned */}
                 <div className="container relative z-10 px-6 md:px-20 lg:px-32 flex flex-col items-end text-right">
-                  <h1 className="max-w-2xl text-4xl md:text-6xl font-black text-white leading-[1.1] drop-shadow-md uppercase">
+                  <h1 className="max-w-2xl text-2xl md:text-3xl w-100 font-black text-white leading-[1.1] drop-shadow-md uppercase">
                     {slide.title}
                   </h1>
                   <Button

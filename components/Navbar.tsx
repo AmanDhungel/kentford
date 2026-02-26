@@ -71,14 +71,16 @@ export default function Navbar() {
     <header className="w-full bg-white border-b sticky top-0 z-[100]">
       <div className="hidden lg:block border-b py-2">
         <div className="container mx-auto flex justify-end items-center gap-6 px-4 text-[12px] font-medium text-slate-500">
-          <div className="flex items-center gap-1.5">
+          <a href="tel:+61087080821" className="flex items-center gap-1.5">
             <Phone size={14} className="text-[#008080]" />
-            <span>+61 2 7806 8110</span>
-          </div>
-          <div className="flex items-center gap-1.5">
+            <span>+61 (08) 7082 0821</span>
+          </a>
+          <a
+            href="mailto:admissions@kentford.edu.au"
+            className="flex items-center gap-1.5">
             <Mail size={14} className="text-[#008080]" />
-            <span>admissions@fusioncollege.edu.au</span>
-          </div>
+            <span>admissions@kentford.edu.au</span>
+          </a>
           <Search size={16} className="cursor-pointer hover:text-[#008080]" />
         </div>
       </div>
