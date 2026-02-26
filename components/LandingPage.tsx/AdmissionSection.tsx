@@ -104,7 +104,7 @@ export default function AdmissionsSection() {
           </div>
 
           {/* Center Logo: Fades/Scales in */}
-          <div className="w-full lg:w-1/3 flex justify-center py-10">
+          {/* <div className="w-full lg:w-1/3 flex justify-center py-10">
             <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
@@ -119,7 +119,7 @@ export default function AdmissionsSection() {
                 className="object-contain"
               />
             </motion.div>
-          </div>
+          </div> */}
 
           {/* Right Column Steps: Coming from Right */}
           <div className="w-full lg:w-1/3 flex flex-col gap-12">

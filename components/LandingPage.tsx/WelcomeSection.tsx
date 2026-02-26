@@ -9,8 +9,7 @@ export default function WelcomeSection() {
   return (
     <section className="relative w-full overflow-hidden bg-white">
       <div className="flex flex-col lg:flex-row min-h-[500px]">
-        {/* Left Side: Content */}
-        <div className="w-full lg:w-[45%] flex items-center justify-center p-8 lg:p-20">
+        <div className="w-full  lg:w-[45%] flex items-center justify-center p-8 lg:p-20">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}

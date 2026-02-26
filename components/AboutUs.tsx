@@ -50,10 +50,9 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
       <section className="relative h-[400px] w-full overflow-hidden">
         <img
-          src="/api/placeholder/1200/400"
+          src="/images/image-2.png"
           alt="Students learning"
           className="w-full h-full object-cover brightness-50"
         />
@@ -66,7 +65,6 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Main Content & Mission/Vision */}
       <section className="max-w-7xl mx-auto py-20 px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <div>

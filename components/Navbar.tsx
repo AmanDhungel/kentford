@@ -28,22 +28,28 @@ const menuData = [
     title: "COURSES",
     items: [
       {
-        label: "Building and Construction Trades",
+        label: "Diploma of Hospitality Management - SIT50422",
         href: "/courses/building-construction",
       },
-      { label: "Civil Construction Design", href: "/courses/civil-design" },
-      { label: "Information Technology", href: "/courses/it" },
-      { label: "Business and Management", href: "/courses/business" },
-      { label: "Kitchen and Hospitality", href: "/courses/hospitality" },
-      { label: "Community and Health", href: "/courses/health" },
+      {
+        label: "Graduate Diploma of Management (Learning) - BSB80120",
+        href: "/courses/gdom",
+      },
+      {
+        label: "Certificate IV in Kitchen Management - SIT40521",
+        href: "/courses/it",
+      },
+      {
+        label: "Certificate III in Commercial Cookery - SIT30821",
+        href: "/courses/business",
+      },
     ],
   },
   {
     title: "ADMISSIONS",
     items: [
-      { label: "Domestic", href: "/admissions/domestic" },
-      { label: "International", href: "/admissions/international" },
-      { label: "FAQs", href: "/faqs" },
+      { label: "How to Apply", href: "/how-to-apply" },
+      { label: "Application Form", href: "/application-form" },
     ],
   },
   {

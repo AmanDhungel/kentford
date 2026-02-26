@@ -15,19 +15,11 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 const courses = [
   {
-    id: "cpc30220",
-    category: "Building Trades",
-    title: "CPC30220 Certificate III in Carpentry",
-    duration: "52 Weeks",
-    image: "/carpentry.jpg",
-    href: "/courses/carpentry",
-  },
-  {
-    id: "cpc50220",
-    category: "Building Trades",
-    title: "CPC50220 Diploma of Building and Construction (Building)",
-    duration: "104 Weeks",
-    image: "/construction.jpg",
+    id: "sit50422",
+    category: "Kitchen and Hospitality",
+    title: "SIT50422 Diploma of Hospitality Management",
+    duration: "78 Weeks",
+    image: "/images/image-2.png",
     href: "/courses/building-construction",
   },
   {
@@ -35,16 +27,24 @@ const courses = [
     category: "Business and Management",
     title: "BSB80120 Graduate Diploma of Management (Learning)",
     duration: "104 Weeks",
-    image: "/management.jpg",
-    href: "/courses/graduate-management",
+    image: "/images/image-8.jpg",
+    href: "/courses/gdom",
   },
   {
-    id: "it-diploma",
-    category: "Information Technology",
-    title: "ICT50220 Diploma of Information Technology",
+    id: "sit40521",
+    category: "Kitchen and Hospitality",
+    title: "SIT40521 Certificate IV in Kitchen Management",
     duration: "78 Weeks",
-    image: "/it-class.jpg",
-    href: "/courses/it-diploma",
+    image: "/images/image-4.png",
+    href: "/courses/it",
+  },
+  {
+    id: "sit30821",
+    category: "Kitchen and Hospitality",
+    title: "SIT30821 Certificate III in Commercial Cookery",
+    duration: "52 Weeks",
+    image: "/images/image-3.png",
+    href: "/courses/business", // Kept your specific href
   },
 ];
 
@@ -74,7 +74,7 @@ export function CourseExplorer() {
                   key={course.id}
                   className="pl-4 md:basis-1/3 flex justify-center">
                   <Link href={course.href} className="group block">
-                    <Card className="md:w-[200px] lg:w-[250px] overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                    <Card className="md:w-[200px] lg:w-[250px] overflow-hidden border pt-0 border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                       <div className="relative h-[200px] w-full shrink-0 ">
                         <Image
                           src={course.image}

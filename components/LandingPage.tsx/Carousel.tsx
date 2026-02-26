@@ -17,13 +17,13 @@ const sliderData = [
   {
     id: 1,
     title: "Located in Your Dream City Sydney",
-    image: "/sydney-bridge.jpg",
+    image: "/images/image-1.png",
     buttonText: "KNOW MORE",
   },
   {
     id: 2,
     title: "Our Experts Instruction for Your Bright Future",
-    image: "/students-working.jpg",
+    image: "/images/image-2.png",
     buttonText: "KNOW MORE",
   },
 ];

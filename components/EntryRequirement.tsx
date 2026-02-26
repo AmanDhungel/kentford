@@ -17,7 +17,7 @@ const EntryRequirementsPage = () => {
     <div className="min-h-screen bg-white">
       <section className="relative h-[300px] w-full overflow-hidden">
         <img
-          src="/images/entry-hero.jpg"
+          src="/images/image-1.png"
           alt="Students in a computer lab"
           className="w-full h-full object-cover brightness-[0.4]"
         />
