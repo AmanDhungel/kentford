@@ -24,7 +24,6 @@ import {
 import Image from "next/image";
 import { useState } from "react";
 
-// 1. Updated Data Structure with hrefs
 const menuData = [
   {
     title: "COURSES",
@@ -67,6 +66,55 @@ const menuData = [
   },
 ];
 
+function NavPopover({
+  menu,
+}: {
+  menu: { title: string; items: { label: string; href: string }[] };
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <Popover open={isOpen} onOpenChange={setIsOpen}>
+      <PopoverTrigger asChild>
+        <Button
+          variant="ghost"
+          className="font-bold text-orange-500 hover:text-[#006666] hover:bg-transparent uppercase text-[13px] tracking-tight flex gap-1 group">
+          {menu.title}
+          <ChevronDown
+            size={14}
+            className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+          />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent
+        align="start"
+        sideOffset={20}
+        className="w-70 p-0 bg-black border-none rounded-none shadow-xl z-[110]">
+        <ul className="flex flex-col">
+          {menu.items.map(
+            (item: { label: string; href: string }, index: number) => (
+              <li
+                key={item.label}
+                className={
+                  index !== menu.items.length - 1
+                    ? "border-b border-white/10"
+                    : ""
+                }>
+                <Link
+                  href={item.href}
+                  onClick={() => setIsOpen(false)} // This closes the popover!
+                  className="block p-4 text-[13px] font-bold text-white hover:bg-orange-500 transition-colors">
+                  {item.label}
+                </Link>
+              </li>
+            ),
+          )}
+        </ul>
+      </PopoverContent>
+    </Popover>
+  );
+}
+
 export default function Navbar() {
   return (
     <header className="w-full bg-white border-b sticky top-0 z-[100]">
@@ -99,46 +147,7 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-1">
           {menuData.map((menu) =>
             menu.items && menu.items.length > 0 ? (
-              <Popover key={menu.title}>
-                <PopoverTrigger asChild>
-                  <Button
-                    variant="ghost"
-                    className="font-bold text-orange-500 hover:text-[#006666] hover:bg-transparent uppercase text-[13px] tracking-tight flex gap-1 group">
-                    {menu.title}
-                    {menu.items && menu.items.length > 0 && (
-                      <ChevronDown
-                        size={14}
-                        className="transition-transform duration-200 group-data-[state=open]:rotate-180"
-                      />
-                    )}
-                  </Button>
-                </PopoverTrigger>
-
-                {menu.items && menu.items.length > 0 && (
-                  <PopoverContent
-                    align="start"
-                    sideOffset={20}
-                    className="w-70 p-0 bg-black border-none rounded-none shadow-xl z-110">
-                    <ul className="flex flex-col">
-                      {menu.items.map((item, index) => (
-                        <li
-                          key={item.label}
-                          className={
-                            index !== menu.items!.length - 1
-                              ? "border-b border-white/10"
-                              : ""
-                          }>
-                          <Link
-                            href={item.href}
-                            className="block p-4 text-[13px] font-bold text-white hover:bg-orange-500 transition-colors">
-                            {item.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </PopoverContent>
-                )}
-              </Popover>
+              <NavPopover key={menu.title} menu={menu} />
             ) : (
               <Link
                 key={menu.title}

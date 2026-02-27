@@ -471,7 +471,6 @@ const CommercialCookeryCertIII = () => {
         </div>
       </div>
 
-      {/* Footer Info Sections */}
       <div className="max-w-7xl mx-auto px-4 mt-12 space-y-12">
         <section className="bg-[#FAF3EF] p-8 md:p-12 rounded-sm border-l-8 border-orange-500">
           <div className="flex items-center gap-4 mb-6">
