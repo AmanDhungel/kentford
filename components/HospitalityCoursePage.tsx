@@ -498,7 +498,6 @@ const GraduateDiplomaPage = () => {
                             <CheckSquare
                               className="text-orange-500"
                               size={16}
-                              fill="currentColor"
                             />
                           </div>
                           <span className="text-slate-700 font-medium">

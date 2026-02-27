@@ -525,11 +525,7 @@ const CommercialCookeryCertIII = () => {
                 <div
                   key={idx}
                   className="flex items-center gap-3 p-3 border rounded text-xs font-bold text-slate-700">
-                  <CheckSquare
-                    className="text-orange-500"
-                    size={14}
-                    fill="currentColor"
-                  />
+                  <CheckSquare className="text-orange-500" size={14} />
                   {item}
                 </div>
               ))}
