@@ -75,20 +75,19 @@ const AboutPage = () => {
             </Badge>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Welcome to <br />
-              <span className="text-emerald-700">
-                Fusion College of Technology
-              </span>
+              <span className="text-emerald-700">Kentford College</span>
             </h2>
             <div className="space-y-6 text-gray-600 leading-relaxed">
               <p>
-                <strong>Fusion College of Technology</strong> is focused on
-                providing quality education and training in a wide range of
-                courses that transform our students to be job-ready.
+                <strong>Kentford College</strong> is focused on providing
+                quality education and training in a wide range of courses that
+                transform our students to be job-ready.
               </p>
               <p>
-                The vocational courses Fusion College offers are all accredited
-                by <strong>Australian Skills Quality Authority (ASQA)</strong>{" "}
-                and meet the national quality assurance requirements.
+                The vocational courses Kentford College offers are all
+                accredited by{" "}
+                <strong>Australian Skills Quality Authority (ASQA)</strong> and
+                meet the national quality assurance requirements.
               </p>
               <div className="border-l-4 border-emerald-500 pl-6 my-8">
                 <h3 className="text-lg font-semibold text-gray-900 italic">

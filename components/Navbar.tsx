@@ -97,48 +97,57 @@ export default function Navbar() {
         </Link>
 
         <div className="hidden lg:flex items-center gap-1">
-          {menuData.map((menu) => (
-            <Popover key={menu.title}>
-              <PopoverTrigger asChild>
-                <Button
-                  variant="ghost"
-                  className="font-bold text-orange-500 hover:text-[#006666] hover:bg-transparent uppercase text-[13px] tracking-tight flex gap-1 group">
-                  {menu.title}
-                  {menu.items && menu.items.length > 0 && (
-                    <ChevronDown
-                      size={14}
-                      className="transition-transform duration-200 group-data-[state=open]:rotate-180"
-                    />
-                  )}
-                </Button>
-              </PopoverTrigger>
+          {menuData.map((menu) =>
+            menu.items && menu.items.length > 0 ? (
+              <Popover key={menu.title}>
+                <PopoverTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    className="font-bold text-orange-500 hover:text-[#006666] hover:bg-transparent uppercase text-[13px] tracking-tight flex gap-1 group">
+                    {menu.title}
+                    {menu.items && menu.items.length > 0 && (
+                      <ChevronDown
+                        size={14}
+                        className="transition-transform duration-200 group-data-[state=open]:rotate-180"
+                      />
+                    )}
+                  </Button>
+                </PopoverTrigger>
 
-              {menu.items && menu.items.length > 0 && (
-                <PopoverContent
-                  align="start"
-                  sideOffset={20}
-                  className="w-[280px] p-0 bg-black border-none rounded-none shadow-xl z-[110]">
-                  <ul className="flex flex-col">
-                    {menu.items.map((item, index) => (
-                      <li
-                        key={item.label}
-                        className={
-                          index !== menu.items!.length - 1
-                            ? "border-b border-white/10"
-                            : ""
-                        }>
-                        <Link
-                          href={item.href}
-                          className="block p-4 text-[13px] font-bold text-white hover:bg-orange-500 transition-colors">
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </PopoverContent>
-              )}
-            </Popover>
-          ))}
+                {menu.items && menu.items.length > 0 && (
+                  <PopoverContent
+                    align="start"
+                    sideOffset={20}
+                    className="w-70 p-0 bg-black border-none rounded-none shadow-xl z-110">
+                    <ul className="flex flex-col">
+                      {menu.items.map((item, index) => (
+                        <li
+                          key={item.label}
+                          className={
+                            index !== menu.items!.length - 1
+                              ? "border-b border-white/10"
+                              : ""
+                          }>
+                          <Link
+                            href={item.href}
+                            className="block p-4 text-[13px] font-bold text-white hover:bg-orange-500 transition-colors">
+                            {item.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </PopoverContent>
+                )}
+              </Popover>
+            ) : (
+              <Link
+                key={menu.title}
+                href={menu.href || "#"}
+                className="font-bold text-orange-500 hover:text-[#006666] hover:bg-transparent uppercase text-[13px] tracking-tight flex gap-1">
+                {menu.title}
+              </Link>
+            ),
+          )}
 
           <Button
             asChild

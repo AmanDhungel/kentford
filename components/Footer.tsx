@@ -26,7 +26,7 @@ export default function Footer() {
             <div className="flex flex-col">
               <Image
                 src="/images/logo-2.png"
-                alt="Fusion Logo"
+                alt="Kentford Logo"
                 width={100}
                 height={100}
               />

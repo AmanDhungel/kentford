@@ -39,11 +39,11 @@ const EntryRequirementsPage = () => {
             Admissions
           </Badge>
           <h2 className="text-3xl font-bold text-gray-900">
-            Joining Fusion College of Technology
+            Joining Kentford College
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Fusion College of Technology has the following entry requirements to
-            ensure students are prepared for academic success:
+            Kentford College has the following entry requirements to ensure
+            students are prepared for academic success:
           </p>
         </div>
 

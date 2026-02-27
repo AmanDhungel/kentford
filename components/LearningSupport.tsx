@@ -18,7 +18,7 @@ const LearningAndSupport = () => {
     {
       title: "Language, Literacy & Numeracy Support",
       description:
-        "If a student's language, literacy and numeracy skills are not at the required level, the student will be referred to an ELICOS college to achieve the required standard before being enrolled in Fusion College's programs. It will be reflected in the new COE.",
+        "If a student's language, literacy and numeracy skills are not at the required level, the student will be referred to an ELICOS college to achieve the required standard before being enrolled in Kentford College's programs. It will be reflected in the new COE.",
       icon: Languages,
     },
     {
@@ -76,7 +76,7 @@ const LearningAndSupport = () => {
       <section className="relative h-[300px] w-full overflow-hidden">
         <img
           src="/images/image-3.jpg"
-          alt="Fusion College Support"
+          alt="Kentford College Support"
           className="w-full h-full object-cover brightness-50"
         />
         <div className="absolute inset-0 flex items-center justify-center">

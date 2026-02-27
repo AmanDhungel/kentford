@@ -25,16 +25,16 @@ export default function WelcomeSection() {
 
             <div className="space-y-4 text-slate-600 text-sm lg:text-base leading-relaxed">
               <p>
-                Fusion College of Technology is focused on providing quality
+                Kentford College of Technology is focused on providing quality
                 education and training in a wide range of courses that transform
                 our students to be job-ready and are given access to many job
                 opportunities here in Australia and overseas.
               </p>
               <p>
-                The vocational courses Fusion College offers are all accredited
-                by Australian Skills Quality Authority (ASQA) and meet the
-                national quality assurance requirement in terms of competency
-                outcomes and assessment validity.
+                The vocational courses Kentford College offers are all
+                accredited by Australian Skills Quality Authority (ASQA) and
+                meet the national quality assurance requirement in terms of
+                competency outcomes and assessment validity.
               </p>
             </div>
 

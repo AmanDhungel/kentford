@@ -411,9 +411,9 @@ const HospitalityDiplomaPage = () => {
                     <div className="flex items-center gap-2 text-[#008080] text-sm font-bold">
                       <ExternalLink size={16} />
                       <a
-                        href="https://fusioncollege.edu.au"
+                        href="https://kentford.edu.au"
                         className="hover:underline">
-                        fusioncollege.edu.au
+                        kentford.edu.au
                       </a>
                     </div>
                   </div>
