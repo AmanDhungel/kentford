@@ -21,6 +21,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Image from "next/image";
 
 // 1. Updated Data Structure with hrefs
 const menuData = [
@@ -29,19 +30,19 @@ const menuData = [
     items: [
       {
         label: "Diploma of Hospitality Management - SIT50422",
-        href: "/courses/building-construction",
+        href: "/course/diploma-of-hospitality-management",
       },
       {
         label: "Graduate Diploma of Management (Learning) - BSB80120",
-        href: "/courses/gdom",
+        href: "/course/graduate-diploma-of-management",
       },
       {
         label: "Certificate IV in Kitchen Management - SIT40521",
-        href: "/courses/it",
+        href: "/course/certificate-in-kitchen-management",
       },
       {
         label: "Certificate III in Commercial Cookery - SIT30821",
-        href: "/courses/business",
+        href: "/course/commercial-cookery",
       },
     ],
   },
@@ -72,27 +73,27 @@ export default function Navbar() {
       <div className="hidden lg:block border-b py-2">
         <div className="container mx-auto flex justify-end items-center gap-6 px-4 text-[12px] font-medium text-slate-500">
           <a href="tel:+61087080821" className="flex items-center gap-1.5">
-            <Phone size={14} className="text-[#008080]" />
+            <Phone size={14} className="text-orange-500" />
             <span>+61 (08) 7082 0821</span>
           </a>
           <a
             href="mailto:admissions@kentford.edu.au"
             className="flex items-center gap-1.5">
-            <Mail size={14} className="text-[#008080]" />
+            <Mail size={14} className="text-orange-500" />
             <span>admissions@kentford.edu.au</span>
           </a>
-          <Search size={16} className="cursor-pointer hover:text-[#008080]" />
+          <Search size={16} className="cursor-pointer hover:text-orange-500" />
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="flex flex-col uppercase shrink-0">
-          <span className="text-xl font-black text-[#006666] leading-none">
-            Fusion College
-          </span>
-          <span className="text-[11px] font-bold text-[#E67E22] tracking-[0.15em]">
-            Of Technology
-          </span>
+          <Image
+            src="/images/logo-2.png"
+            alt="Kentford Logo"
+            width={100}
+            height={100}
+          />
         </Link>
 
         <div className="hidden lg:flex items-center gap-1">
@@ -101,7 +102,7 @@ export default function Navbar() {
               <PopoverTrigger asChild>
                 <Button
                   variant="ghost"
-                  className="font-bold text-[#008080] hover:text-[#006666] hover:bg-transparent uppercase text-[13px] tracking-tight flex gap-1 group">
+                  className="font-bold text-orange-500 hover:text-[#006666] hover:bg-transparent uppercase text-[13px] tracking-tight flex gap-1 group">
                   {menu.title}
                   {menu.items && menu.items.length > 0 && (
                     <ChevronDown
@@ -128,7 +129,7 @@ export default function Navbar() {
                         }>
                         <Link
                           href={item.href}
-                          className="block p-4 text-[13px] font-bold text-white hover:bg-[#008080] transition-colors">
+                          className="block p-4 text-[13px] font-bold text-white hover:bg-orange-500 transition-colors">
                           {item.label}
                         </Link>
                       </li>
@@ -141,7 +142,7 @@ export default function Navbar() {
 
           <Button
             asChild
-            className="bg-[#008080] hover:bg-[#006666] text-white rounded-full px-8 py-5 font-bold uppercase text-sm ml-4">
+            className="bg-orange-500 hover:bg-[#006666] text-white rounded-full px-8 py-5 font-bold uppercase text-sm ml-4">
             <Link href="/apply">Apply Now</Link>
           </Button>
         </div>
@@ -164,7 +165,7 @@ export default function Navbar() {
                   <AccordionItem value={`item-${idx}`} key={menu.title}>
                     {menu.items && menu.items.length > 0 ? (
                       <>
-                        <AccordionTrigger className="text-[#008080] font-bold uppercase text-sm">
+                        <AccordionTrigger className="text-orange-500 font-bold uppercase text-sm">
                           {menu.title}
                         </AccordionTrigger>
                         <AccordionContent className="flex flex-col gap-2 pl-4">
@@ -172,7 +173,7 @@ export default function Navbar() {
                             <Link
                               key={sub.label}
                               href={sub.href}
-                              className="py-2 text-sm text-slate-600 hover:text-[#008080]">
+                              className="py-2 text-sm text-slate-600 hover:text-orange-500">
                               {sub.label}
                             </Link>
                           ))}
@@ -181,7 +182,7 @@ export default function Navbar() {
                     ) : (
                       <Link
                         href={menu.href || "#"}
-                        className="flex flex-1 items-center justify-between py-4 text-[#008080] font-bold uppercase text-sm hover:underline">
+                        className="flex flex-1 items-center justify-between py-4 text-orange-500 font-bold uppercase text-sm hover:underline">
                         {menu.title}
                       </Link>
                     )}
@@ -190,7 +191,7 @@ export default function Navbar() {
               </Accordion>
               <Button
                 asChild
-                className="w-full bg-[#008080] mt-6 font-bold uppercase">
+                className="w-full bg-orange-500 mt-6 font-bold uppercase">
                 <Link href="/apply">Apply Now</Link>
               </Button>
             </SheetContent>

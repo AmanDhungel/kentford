@@ -20,7 +20,7 @@ export default function WelcomeSection() {
               Welcome to
             </h4>
             <h2 className="text-3xl lg:text-5xl font-black text-[#001a1a] mb-6 leading-tight">
-              Fusion College of Technology
+              Kentford College of Technology
             </h2>
 
             <div className="space-y-4 text-slate-600 text-sm lg:text-base leading-relaxed">

@@ -24,27 +24,26 @@ export default function Footer() {
           {/* Column 1: Brand Info */}
           <div className="space-y-6">
             <div className="flex flex-col">
-              <span className="text-2xl font-black text-[#00A9A5] leading-none uppercase">
-                Fusion College
-              </span>
-              <span className="text-sm font-bold text-[#D97706] tracking-[0.2em] uppercase">
-                Of Technology
-              </span>
+              <Image
+                src="/images/logo-2.png"
+                alt="Fusion Logo"
+                width={100}
+                height={100}
+              />
             </div>
 
             <div className="space-y-2 text-sm text-slate-300 font-medium">
-              <p>ABN: 30 655 078 587</p>
-              <p>RTO ID: 46086</p>
-              <p>CRICOS Provider Code: 04189E</p>
+              {/* <p>ABN: 30 655 078 587</p> */}
+              {/* <p>RTO ID: 46086</p> */}
+              <p>CRICOS Provider Code: 04261B</p>
               <p className="pt-2">
-                Level 5, 16-18 Wentworth Street,
+                Level 3 76 Waymouth St ADELAIDE
                 <br />
-                Parramatta NSW 2150
+                South Australia 5000
               </p>
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
           <div>
             <h3 className="text-lg font-bold mb-6 uppercase tracking-wider relative inline-block">
               Quick Links
@@ -53,7 +52,6 @@ export default function Footer() {
 
             <div className="grid grid-cols-2 gap-x-4 gap-y-3">
               {[
-                "Fusion College of Technology",
                 "Admissions",
                 "Agency Details",
                 "Contact Us",
@@ -117,7 +115,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Scroll to Top Button */}
         <button
           onClick={scrollToTop}
           className="absolute bottom-16 right-8 bg-[#00A9A5] p-3 rounded-full hover:bg-[#008c89] transition-all shadow-lg">
@@ -127,7 +124,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-900 pt-8 text-center">
           <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-            © 2026 Fusion College of Technology, All Rights Reserved.
+            © 2026 Kentford College of Technology, All Rights Reserved.
           </p>
         </div>
       </div>
