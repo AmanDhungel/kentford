@@ -18,7 +18,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-black text-white pt-16 pb-8 px-4 font-sans relative">
+    <footer className="bg-black text-orange-500 pt-16 pb-8 px-4 font-sans relative">
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           {/* Column 1: Brand Info */}
@@ -27,8 +27,8 @@ export default function Footer() {
               <Image
                 src="/images/logo-2.png"
                 alt="Kentford Logo"
-                width={100}
-                height={100}
+                width={150}
+                height={150}
               />
             </div>
 

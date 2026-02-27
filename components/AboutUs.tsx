@@ -113,9 +113,9 @@ const AboutPage = () => {
 
           <div className="relative group">
             <img
-              src="/api/placeholder/600/500"
+              src="/images/image-8.jpg"
               alt="Students collaborating"
-              className="rounded-lg shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
+              className="rounded-lg shadow-2xl transition-transform min-w-[500px] object-cover min-h-[550px] duration-500 group-hover:scale-[1.02]"
             />
           </div>
         </div>
