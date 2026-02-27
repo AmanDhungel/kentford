@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 const LearningAndSupport = () => {
   const supportServices = [
@@ -75,7 +76,7 @@ const LearningAndSupport = () => {
     <div className="min-h-screen bg-white">
       <section className="relative h-[300px] w-full overflow-hidden">
         <img
-          src="/images/image-3.jpg"
+          src="/images/image-10.jpeg"
           alt="Kentford College Support"
           className="w-full h-full object-cover brightness-50"
         />
@@ -93,7 +94,7 @@ const LearningAndSupport = () => {
         <div className="flex flex-col items-start gap-2">
           <Badge
             variant="outline"
-            className="text-[#008080] border-[#008080] uppercase tracking-widest">
+            className="text-orange-500 border-orange-500 uppercase tracking-widest">
             Admissions
           </Badge>
           <h2 className="text-3xl font-bold text-gray-900">
@@ -111,8 +112,8 @@ const LearningAndSupport = () => {
               key={index}
               className="flex flex-col h-full border-none shadow-md hover:shadow-lg transition-all duration-300 group">
               <CardHeader className="pb-4">
-                <div className="w-12 h-12 bg-emerald-50 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#008080] transition-colors duration-300">
-                  <service.icon className="h-6 w-6 text-[#008080] group-hover:text-white transition-colors duration-300" />
+                <div className="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center mb-4 group-hover:bg-orange-500 transition-colors duration-300">
+                  <service.icon className="h-6 w-6 text-orange-500 group-hover:text-white transition-colors duration-300" />
                 </div>
                 <CardTitle className="text-lg font-bold leading-tight text-slate-800">
                   {service.title}
@@ -139,9 +140,11 @@ const LearningAndSupport = () => {
             successful.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-[#008080] hover:bg-[#006666] text-white px-8 py-3 rounded-full font-bold uppercase text-sm transition-colors">
+            <Link
+              href={"/contact-us"}
+              className="bg-orange-500 hover:bg-[#006666] text-white px-8 py-3 rounded-full font-bold uppercase text-sm transition-colors">
               Contact Student Support
-            </button>
+            </Link>
           </div>
         </div>
       </section>

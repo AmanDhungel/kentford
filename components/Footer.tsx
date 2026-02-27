@@ -10,7 +10,22 @@ import {
   Youtube,
   ChevronRight,
   ChevronUp,
+  Target,
 } from "lucide-react";
+
+const footerLabels = [
+  { label: "Admissions", href: "/how-to-apply" },
+  { label: "Contact Us", href: "/contact-us" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Courses", href: "/courses" },
+  { label: "Student Info", href: "/entry-requirement" },
+  {
+    label: "Australian Home Affair",
+    href: "http://www.homeaffairs.gov.au/",
+    target: "_blank",
+  },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+];
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -51,21 +66,14 @@ export default function Footer() {
             </h3>
 
             <div className="grid grid-cols-2 gap-x-4 gap-y-3">
-              {[
-                "Admissions",
-                "Agency Details",
-                "Contact Us",
-                "About Us",
-                "Courses",
-                "Student Info",
-                "Online Learning",
-              ].map((link) => (
+              {footerLabels.map((item) => (
                 <Link
-                  key={link}
-                  href="#"
+                  key={item.label}
+                  href={item.href}
+                  target={item.target || "_self"}
                   className="flex items-center gap-2 text-xs text-slate-400 hover:text-[#00A9A5] transition-colors">
                   <ChevronRight size={14} className="text-slate-600" />
-                  {link}
+                  {item.label}
                 </Link>
               ))}
             </div>
@@ -80,22 +88,14 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-6">
-              <Facebook
-                size={20}
-                className="cursor-pointer hover:text-[#00A9A5] transition-colors"
-              />
-              <Twitter
-                size={20}
-                className="cursor-pointer hover:text-[#00A9A5] transition-colors"
-              />
-              <Linkedin
-                size={20}
-                className="cursor-pointer hover:text-[#00A9A5] transition-colors"
-              />
-              <Youtube
-                size={20}
-                className="cursor-pointer hover:text-[#00A9A5] transition-colors"
-              />
+              <Link
+                href="https://www.facebook.com/profile.php?id=61562499548659"
+                target="_blank">
+                <Facebook
+                  size={20}
+                  className="cursor-pointer hover:text-[#00A9A5] transition-colors"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -106,7 +106,6 @@ export default function Footer() {
           <ChevronUp size={24} />
         </button>
 
-        {/* Bottom Bar */}
         <div className="border-t border-slate-900 pt-8 text-center">
           <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">
             © 2026 Kentford College of Technology, All Rights Reserved.

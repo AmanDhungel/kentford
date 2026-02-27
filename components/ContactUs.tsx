@@ -159,7 +159,7 @@ const ContactUsPage = () => {
           </div>
           <div className="w-full h-[450px] shadow-2xl overflow-hidden border-4 border-white">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.123456789!2d151.000000!3d-33.815000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQ4JzU0LjAiUyAxNTHCsDAwJzAwLjAiRQ!5e0!3m2!1sen!2sau!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94610.53652046126!2d138.5629008025764!3d-34.963711288100235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0cf004ef4bf95%3A0x163c74829214063e!2sKentford%20College!5e1!3m2!1sen!2snp!4v1772161283644!5m2!1sen!2snp"
               width="100%"
               height="100%"
               style={{ border: 0 }}
