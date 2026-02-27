@@ -20,7 +20,7 @@ const courses = [
     title: "SIT50422 Diploma of Hospitality Management",
     duration: "78 Weeks",
     image: "/images/image-2.png",
-    href: "/courses/building-construction",
+    href: "/course/diploma-of-hospitality-management",
   },
   {
     id: "bsb80120",
@@ -28,7 +28,7 @@ const courses = [
     title: "BSB80120 Graduate Diploma of Management (Learning)",
     duration: "104 Weeks",
     image: "/images/image-8.jpg",
-    href: "/courses/gdom",
+    href: "/course/graduate-diploma-of-management",
   },
   {
     id: "sit40521",
@@ -36,7 +36,7 @@ const courses = [
     title: "SIT40521 Certificate IV in Kitchen Management",
     duration: "78 Weeks",
     image: "/images/image-4.png",
-    href: "/courses/it",
+    href: "/course/certificate-in-kitchen-management",
   },
   {
     id: "sit30821",
@@ -44,7 +44,7 @@ const courses = [
     title: "SIT30821 Certificate III in Commercial Cookery",
     duration: "52 Weeks",
     image: "/images/image-3.png",
-    href: "/courses/business", // Kept your specific href
+    href: "/course/commercial-cookery",
   },
 ];
 

@@ -71,27 +71,12 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 3: Enquiry & Social */}
           <div className="space-y-8">
             <div>
               <h3 className="text-lg font-bold mb-4 uppercase tracking-wider">
                 Build Your Career With Quality Education
               </h3>
               <div className="h-[1px] bg-slate-800 w-12 mb-6" />
-
-              <p className="text-xs font-bold text-slate-400 mb-4 uppercase">
-                Enquire Now
-              </p>
-              <div className="flex border border-slate-800 bg-transparent overflow-hidden">
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  className="bg-transparent px-4 py-3 text-sm flex-grow outline-none text-white"
-                />
-                <button className="bg-[#00A9A5] hover:bg-[#008c89] px-6 py-3 text-xs font-black transition-colors">
-                  GO
-                </button>
-              </div>
             </div>
 
             <div className="flex gap-6">

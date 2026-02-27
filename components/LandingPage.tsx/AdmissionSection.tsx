@@ -63,7 +63,7 @@ export default function AdmissionsSection() {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-black text-[#008080] tracking-tight uppercase mb-4">
+          <h2 className="text-4xl font-black text-[#D97706] tracking-tight uppercase mb-4">
             ADMISSIONS
           </h2>
           <div className="flex justify-center items-center gap-4 mb-8">
@@ -73,7 +73,7 @@ export default function AdmissionsSection() {
             </div>
             <div className="h-[1px] bg-slate-200 w-24" />
           </div>
-          <Button className="bg-[#008080] hover:bg-[#006666] font-bold px-8 py-6 rounded-none uppercase text-sm">
+          <Button className="bg-[#D97706] hover:bg-[#006666] font-bold px-8 py-6 rounded-none uppercase text-sm">
             HOW TO APPLY
           </Button>
         </div>

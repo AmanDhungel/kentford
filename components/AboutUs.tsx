@@ -70,12 +70,12 @@ const AboutPage = () => {
           <div>
             <Badge
               variant="outline"
-              className="text-emerald-600 border-emerald-600 mb-4 uppercase tracking-wider">
+              className="text-orange-600 border-orange-600 mb-4 uppercase tracking-wider">
               About Us
             </Badge>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Welcome to <br />
-              <span className="text-emerald-700">Kentford College</span>
+              <span className="text-orange-600">Kentford College</span>
             </h2>
             <div className="space-y-6 text-gray-600 leading-relaxed">
               <p>
@@ -89,7 +89,7 @@ const AboutPage = () => {
                 <strong>Australian Skills Quality Authority (ASQA)</strong> and
                 meet the national quality assurance requirements.
               </p>
-              <div className="border-l-4 border-emerald-500 pl-6 my-8">
+              <div className="border-l-4 border-orange-500 pl-6 my-8">
                 <h3 className="text-lg font-semibold text-gray-900 italic">
                   Our Vision
                 </h3>
@@ -98,7 +98,7 @@ const AboutPage = () => {
                   and transform in reaching their full potential.
                 </p>
               </div>
-              <div className="border-l-4 border-emerald-500 pl-6 my-8">
+              <div className="border-l-4 border-orange-500 pl-6 my-8">
                 <h3 className="text-lg font-semibold text-gray-900 italic">
                   Our Mission
                 </h3>
@@ -140,8 +140,8 @@ const AboutPage = () => {
                 key={idx}
                 className="bg-white border-none shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader>
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-emerald-100">
-                    <item.icon className="h-6 w-6 text-emerald-700" />
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-orange-100">
+                    <item.icon className="h-6 w-6 text-orange-600" />
                   </div>
                   <CardTitle>{item.title}</CardTitle>
                 </CardHeader>
@@ -165,7 +165,7 @@ const AboutPage = () => {
             <div
               key={idx}
               className="flex items-center gap-3 bg-white border border-gray-200 px-6 py-4 rounded-full shadow-sm hover:border-emerald-500 transition-colors cursor-default">
-              <value.icon className="h-5 w-5 text-emerald-600" />
+              <value.icon className="h-5 w-5 text-orange-600" />
               <span className="font-medium text-gray-700">{value.title}</span>
             </div>
           ))}

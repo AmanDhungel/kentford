@@ -16,19 +16,19 @@ export default function WelcomeSection() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-xl">
-            <h4 className="text-[#008080] font-bold text-lg mb-2">
+            <h4 className="text-orange-500 font-bold text-lg mb-2">
               Welcome to
             </h4>
             <h2 className="text-3xl lg:text-5xl font-black text-[#001a1a] mb-6 leading-tight">
-              Kentford College of Technology
+              Kentford College
             </h2>
 
             <div className="space-y-4 text-slate-600 text-sm lg:text-base leading-relaxed">
               <p>
-                Kentford College of Technology is focused on providing quality
-                education and training in a wide range of courses that transform
-                our students to be job-ready and are given access to many job
-                opportunities here in Australia and overseas.
+                Kentford College is focused on providing quality education and
+                training in a wide range of courses that transform our students
+                to be job-ready and are given access to many job opportunities
+                here in Australia and overseas.
               </p>
               <p>
                 The vocational courses Kentford College offers are all
@@ -42,7 +42,7 @@ export default function WelcomeSection() {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}>
-              <Button className="mt-8 bg-[#008080] hover:bg-[#006666] text-white font-bold rounded-full px-8 py-6 uppercase tracking-wider text-xs">
+              <Button className="mt-8 bg-orange-500 hover:bg-[#006666] text-white font-bold rounded-full px-8 py-6 uppercase tracking-wider text-xs">
                 Learn More
               </Button>
             </motion.div>

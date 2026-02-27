@@ -57,7 +57,7 @@ export function HeroSlider() {
                 </div>
 
                 <div className="container relative z-10 px-6 md:px-20 lg:px-32 flex flex-col items-end text-right">
-                  <h1 className="max-w-2xl text-2xl md:text-3xl w-100 font-black text-white leading-[1.1] drop-shadow-md uppercase">
+                  <h1 className="max-w-2xl text-sm max-sm:w-50 leading-relaxed  md:text-3xl w-100 font-black text-white drop-shadow-md uppercase">
                     {slide.title}
                   </h1>
                   <Button

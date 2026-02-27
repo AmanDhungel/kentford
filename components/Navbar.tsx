@@ -22,6 +22,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
+import { useState } from "react";
 
 // 1. Updated Data Structure with hrefs
 const menuData = [
@@ -56,9 +57,8 @@ const menuData = [
   {
     title: "STUDENT INFO",
     items: [
-      { label: "Student Handbook", href: "/info/handbook" },
-      { label: "Campus Life", href: "/info/campus-life" },
-      { label: "Orientation", href: "/info/orientation" },
+      { label: "Entry Requirements", href: "/entry-requirement" },
+      { label: "Learning Support", href: "/learning-support" },
     ],
   },
   {
@@ -68,6 +68,7 @@ const menuData = [
 ];
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
   return (
     <header className="w-full bg-white border-b sticky top-0 z-[100]">
       <div className="hidden lg:block border-b py-2">
@@ -91,8 +92,8 @@ export default function Navbar() {
           <Image
             src="/images/logo-2.png"
             alt="Kentford Logo"
-            width={100}
-            height={100}
+            width={150}
+            height={150}
           />
         </Link>
 
