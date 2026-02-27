@@ -30,12 +30,11 @@ const EntryRequirementsPage = () => {
         </div>
       </section>
 
-      {/* Main Content */}
       <section className="max-w-5xl mx-auto py-16 px-6 lg:px-8">
         <div className="text-center mb-12">
           <Badge
             variant="outline"
-            className="text-[#008080] border-[#008080] mb-4 uppercase tracking-widest">
+            className="text-orange-500 border-orange-500 mb-4 uppercase tracking-widest">
             Admissions
           </Badge>
           <h2 className="text-3xl font-bold text-gray-900">
@@ -48,21 +47,19 @@ const EntryRequirementsPage = () => {
         </div>
 
         <div className="grid gap-8">
-          {/* International Student Requirements Card */}
           <Card className="border-t-4 border-t-[#E67E22] shadow-lg">
             <CardHeader className="bg-slate-50/50">
               <div className="flex items-center gap-3">
-                <UserCheck className="h-6 w-6 text-[#008080]" />
+                <UserCheck className="h-6 w-6 text-orange-500" />
                 <CardTitle className="text-xl text-gray-800">
                   International students must:
                 </CardTitle>
               </div>
             </CardHeader>
             <CardContent className="pt-8 space-y-6">
-              {/* Age & Education */}
               <div className="flex gap-4">
-                <div className="mt-1 bg-emerald-100 p-2 rounded-full h-fit">
-                  <GraduationCap className="h-5 w-5 text-[#008080]" />
+                <div className="mt-1 bg-orange-100 p-2 rounded-full h-fit">
+                  <GraduationCap className="h-5 w-5 text-orange-500" />
                 </div>
                 <div>
                   <p className="text-gray-700 leading-relaxed font-medium">
@@ -74,10 +71,9 @@ const EntryRequirementsPage = () => {
 
               <Separator />
 
-              {/* Interview */}
               <div className="flex gap-4">
-                <div className="mt-1 bg-emerald-100 p-2 rounded-full h-fit">
-                  <CheckCircle className="h-5 w-5 text-[#008080]" />
+                <div className="mt-1 bg-orange-100 p-2 rounded-full h-fit">
+                  <CheckCircle className="h-5 w-5 text-orange-500" />
                 </div>
                 <div>
                   <p className="text-gray-700 leading-relaxed">
@@ -89,10 +85,9 @@ const EntryRequirementsPage = () => {
 
               <Separator />
 
-              {/* English Language Proficiency */}
               <div className="flex gap-4">
-                <div className="mt-1 bg-emerald-100 p-2 rounded-full h-fit">
-                  <Languages className="h-5 w-5 text-[#008080]" />
+                <div className="mt-1 bg-orange-100 p-2 rounded-full h-fit">
+                  <Languages className="h-5 w-5 text-orange-500" />
                 </div>
                 <div className="space-y-4">
                   <p className="text-gray-700 leading-relaxed">
@@ -125,7 +120,6 @@ const EntryRequirementsPage = () => {
             </CardContent>
           </Card>
 
-          {/* Footer Note */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 flex gap-4">
             <AlertCircle className="h-6 w-6 text-amber-600 shrink-0" />
             <div className="text-sm text-amber-800 leading-relaxed">

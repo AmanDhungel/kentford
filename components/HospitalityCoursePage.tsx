@@ -52,7 +52,7 @@ const GraduateDiplomaPage = () => {
           className="object-cover opacity-40"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-white/95 px-8 py-4 shadow-2xl border-t-4 border-[#008080]">
+          <div className="bg-white/95 px-8 py-4 shadow-2xl border-t-4 border-orange-500">
             <h1 className="text-xl md:text-xl font-black tracking-[0.2em] text-[#001a1a] uppercase text-center">
               BSB80120 Graduate Diploma of Management (Learning) <br /> CRICOS
               Course Code: 115259F
@@ -68,14 +68,14 @@ const GraduateDiplomaPage = () => {
               <Badge className="bg-[#E67E22] hover:bg-[#d3731f] rounded-none px-4 py-1">
                 Postgraduate
               </Badge>
-              <h2 className="text-3xl font-bold text-[#008080]">
+              <h2 className="text-3xl font-bold text-orange-500">
                 About this course
               </h2>
               <p className="text-slate-600 leading-relaxed">
                 CRICOS Course Code:{" "}
                 <span className="font-bold text-[#001a1a]">115259F</span>
               </p>
-              <div className="bg-slate-50 border-l-4 border-[#008080] p-4 italic text-slate-700">
+              <div className="bg-slate-50 border-l-4 border-orange-500 p-4 italic text-slate-700">
                 International students seeking to pursue or further a career in
                 organisational learning and capability development, or seeking a
                 pathway to higher level qualifications.
@@ -102,37 +102,37 @@ const GraduateDiplomaPage = () => {
             </div>
 
             <Tabs defaultValue="entry" className="w-full">
-              <TabsList className="grid grid-cols-3 md:grid-cols-3 min-h-fit p-2 bg-[#008080] gap-2 w-full text-black rounded-none mb-1">
+              <TabsList className="grid grid-cols-3 md:grid-cols-3 min-h-fit p-2 bg-orange-500 gap-2 w-full text-black rounded-none mb-1">
                 <TabsTrigger
                   value="entry"
-                  className="data-[state=active]:bg-gray-200 bg-white data-[state=active]:text-[#008080] text-black text-xs py-4 gap-2 rounded-none">
+                  className="data-[state=active]:bg-gray-200 bg-white data-[state=active]:text-orange-500 text-black text-xs py-4 gap-2 rounded-none">
                   <ClipboardCheck size={16} /> Entry Requirement
                 </TabsTrigger>
                 <TabsTrigger
                   value="units"
-                  className="data-[state=active]:bg-gray-200 bg-white data-[state=active]:text-[#008080] text-black text-xs py-4 gap-2 rounded-none">
+                  className="data-[state=active]:bg-gray-200 bg-white data-[state=active]:text-orange-500 text-black text-xs py-4 gap-2 rounded-none">
                   <BookOpen size={16} /> Unit Details
                 </TabsTrigger>
                 <TabsTrigger
                   value="fees"
-                  className="data-[state=active]:bg-gray-200 bg-white data-[state=active]:text-[#008080] text-black text-xs py-4 gap-2 rounded-none">
+                  className="data-[state=active]:bg-gray-200 bg-white data-[state=active]:text-orange-500 text-black text-xs py-4 gap-2 rounded-none">
                   <CalendarDays size={16} /> Dates and Fees
                 </TabsTrigger>
                 <TabsTrigger
                   value="apply"
-                  className="data-[state=active]:bg-gray-200 bg-white data-[state=active]:text-[#008080] text-black text-xs py-4 gap-2 rounded-none">
+                  className="data-[state=active]:bg-gray-200 bg-white data-[state=active]:text-orange-500 text-black text-xs py-4 gap-2 rounded-none">
                   <Send size={16} /> Apply Now
                 </TabsTrigger>
                 <TabsTrigger
                   value="duration"
-                  className="data-[state=active]:bg-gray-200 bg-white data-[state=active]:text-[#008080] text-black text-xs py-4 gap-2 rounded-none">
+                  className="data-[state=active]:bg-gray-200 bg-white data-[state=active]:text-orange-500 text-black text-xs py-4 gap-2 rounded-none">
                   <Clock size={16} /> Duration
                 </TabsTrigger>
               </TabsList>
 
-              <div className="border-4 border-[#008080] p-8 min-h-[500px]">
+              <div className="border-4 border-orange-500 p-8 min-h-[500px]">
                 <TabsContent value="entry" className="space-y-6 mt-0">
-                  <h3 className="text-2xl font-bold text-[#008080]">
+                  <h3 className="text-2xl font-bold text-orange-500">
                     International Students must:
                   </h3>
                   <ul className="space-y-4">
@@ -144,7 +144,7 @@ const GraduateDiplomaPage = () => {
                     ].map((item, i) => (
                       <li key={i} className="flex gap-3 text-slate-700">
                         <CheckCircle2
-                          className="text-[#008080] shrink-0 mt-1"
+                          className="text-orange-500 shrink-0 mt-1"
                           size={18}
                         />
                         <span>{item}</span>
@@ -171,7 +171,7 @@ const GraduateDiplomaPage = () => {
                   </div>
 
                   <div className="flex items-center gap-3 p-4 bg-slate-100 border border-slate-200 text-slate-700">
-                    <Laptop className="text-[#008080]" />
+                    <Laptop className="text-orange-500" />
                     <p className="text-sm font-medium">
                       Students must bring their own laptop or compatible device
                       for classroom use.
@@ -185,7 +185,7 @@ const GraduateDiplomaPage = () => {
                   </h3>
                   <div className="rounded-md border">
                     <Table>
-                      <TableHeader className="bg-[#008080] pointer-events-none">
+                      <TableHeader className="bg-orange-500 pointer-events-none">
                         <TableRow className="hover:bg-transparent">
                           <TableHead className="text-white font-bold">
                             CODE
@@ -244,7 +244,7 @@ const GraduateDiplomaPage = () => {
                           },
                         ].map((unit) => (
                           <TableRow key={unit.code}>
-                            <TableCell className="font-bold text-[#008080]">
+                            <TableCell className="font-bold text-orange-500">
                               {unit.code}
                             </TableCell>
                             <TableCell className="max-w-50 overflow-hidden">
@@ -257,7 +257,7 @@ const GraduateDiplomaPage = () => {
                                 variant="outline"
                                 className={
                                   unit.type === "Core"
-                                    ? "border-[#008080] text-[#008080]"
+                                    ? "border-orange-500 text-orange-500"
                                     : "border-slate-300 text-slate-500"
                                 }>
                                 {unit.type}
@@ -272,7 +272,7 @@ const GraduateDiplomaPage = () => {
 
                 <TabsContent value="fees" className="mt-0 space-y-8">
                   <div>
-                    <h3 className="text-xl font-bold text-[#008080] mb-4">
+                    <h3 className="text-xl font-bold text-orange-500 mb-4">
                       Intake Months each year
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
@@ -288,7 +288,7 @@ const GraduateDiplomaPage = () => {
 
                   <div className="grid md:grid-cols-2 gap-8">
                     <div>
-                      <h3 className="text-xl font-bold text-[#008080] mb-4">
+                      <h3 className="text-xl font-bold text-orange-500 mb-4">
                         Course Fees and Payment
                       </h3>
                       <div className="space-y-2 text-slate-700">
@@ -307,7 +307,7 @@ const GraduateDiplomaPage = () => {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-[#008080] mb-4">
+                      <h3 className="text-xl font-bold text-orange-500 mb-4">
                         Payment Options
                       </h3>
                       <ul className="list-disc pl-5 space-y-2 text-slate-700">
@@ -323,7 +323,7 @@ const GraduateDiplomaPage = () => {
 
                 {/* Tab: Apply Now */}
                 <TabsContent value="apply" className="mt-0 space-y-6">
-                  <h3 className="text-2xl font-bold text-[#008080]">
+                  <h3 className="text-2xl font-bold text-orange-500">
                     How can I apply?
                   </h3>
                   <div className="bg-slate-50 p-6 rounded-lg space-y-4">
@@ -354,7 +354,7 @@ const GraduateDiplomaPage = () => {
                       student agreement is signed and first payment received, we
                       issue a Confirmation of Enrolment (CoE).
                     </p>
-                    <div className="flex items-center gap-2 text-[#008080] text-sm font-bold">
+                    <div className="flex items-center gap-2 text-orange-500 text-sm font-bold">
                       <ExternalLink size={16} />
                       <a
                         href="https://kentford.edu.au"
@@ -368,7 +368,7 @@ const GraduateDiplomaPage = () => {
                 {/* Tab: Duration */}
                 <TabsContent value="duration" className="mt-0 space-y-8">
                   <div className="space-y-4">
-                    <h3 className="text-2xl font-bold text-[#008080]">
+                    <h3 className="text-2xl font-bold text-orange-500">
                       Course Duration
                     </h3>
                     <p className="text-slate-700 leading-relaxed">
@@ -381,7 +381,7 @@ const GraduateDiplomaPage = () => {
 
                   <div className="grid md:grid-cols-2 gap-8">
                     <div className="space-y-4">
-                      <h3 className="text-xl font-bold text-[#008080]">
+                      <h3 className="text-xl font-bold text-orange-500">
                         Delivery Mode
                       </h3>
                       <div className="space-y-3">
@@ -391,7 +391,7 @@ const GraduateDiplomaPage = () => {
                             13.5 hours/week
                           </span>
                         </div>
-                        <div className="flex justify-between p-3 bg-slate-50 border-l-4 border-[#008080]">
+                        <div className="flex justify-between p-3 bg-slate-50 border-l-4 border-orange-500">
                           <span className="text-sm">Supervised Study</span>
                           <span className="font-bold text-sm">
                             6.5 hours/week
@@ -401,11 +401,11 @@ const GraduateDiplomaPage = () => {
                     </div>
 
                     <div className="space-y-4">
-                      <h3 className="text-xl font-bold text-[#008080]">
+                      <h3 className="text-xl font-bold text-orange-500">
                         Delivery Site
                       </h3>
                       <div className="flex gap-3 text-slate-700 text-sm">
-                        <MapPin className="text-[#008080] shrink-0" />
+                        <MapPin className="text-orange-500 shrink-0" />
                         <p>
                           Suite 502, Level 5, 16 – 18 Wentworth Street
                           Parramatta NSW 2150
@@ -418,9 +418,9 @@ const GraduateDiplomaPage = () => {
             </Tabs>
 
             <div className="max-w-7xl mx-auto px-4 py-12 space-y-16">
-              <section className="bg-[#FAF3EF] p-8 md:p-12 rounded-sm border-l-8 border-[#008080]">
+              <section className="bg-[#FAF3EF] p-8 md:p-12 rounded-sm border-l-8 border-orange-500">
                 <div className="flex items-center gap-4 mb-6">
-                  <Target className="text-[#008080]" size={32} />
+                  <Target className="text-orange-500" size={32} />
                   <h2 className="text-2xl md:text-3xl font-bold text-[#333]">
                     Training and assessment information
                   </h2>
@@ -443,7 +443,7 @@ const GraduateDiplomaPage = () => {
 
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
-                    <TrendingUp className="text-[#008080]" size={28} />
+                    <TrendingUp className="text-orange-500" size={28} />
                     <h3 className="text-xl md:text-2xl font-bold text-[#333]">
                       Course progress and attendance
                     </h3>
@@ -471,7 +471,7 @@ const GraduateDiplomaPage = () => {
                 <div className="flex flex-col md:flex-row gap-12">
                   <div className="md:w-1/3">
                     <div className="sticky top-24 space-y-4">
-                      <div className="bg-[#008080] w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                      <div className="bg-orange-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                         <HeartHandshake className="text-white" size={32} />
                       </div>
                       <h2 className="text-3xl font-bold text-[#333]">
@@ -494,9 +494,9 @@ const GraduateDiplomaPage = () => {
                         <div
                           key={index}
                           className="flex items-start gap-4 p-4 rounded-xl border border-transparent hover:border-emerald-100 hover:bg-emerald-50/30 transition-all duration-300">
-                          <div className="mt-1 bg-white border-2 border-[#008080] rounded flex items-center justify-center p-0.5">
+                          <div className="mt-1 bg-white border-2 border-orange-500 rounded flex items-center justify-center p-0.5">
                             <CheckSquare
-                              className="text-[#008080]"
+                              className="text-orange-500"
                               size={16}
                               fill="currentColor"
                             />
@@ -508,9 +508,9 @@ const GraduateDiplomaPage = () => {
                       ))}
                     </div>
 
-                    <div className="mt-10 p-6 bg-[#008080]/5 rounded-2xl border border-[#008080]/10 flex gap-4 items-center">
-                      <Clock className="text-[#008080] shrink-0" />
-                      <p className="text-sm text-[#008080] font-semibold italic">
+                    <div className="mt-10 p-6 bg-orange-500/5 rounded-2xl border border-orange-500/10 flex gap-4 items-center">
+                      <Clock className="text-orange-500 shrink-0" />
+                      <p className="text-sm text-orange-500 font-semibold italic">
                         Support is tailored to individual needs identified
                         during your initial application.
                       </p>
@@ -524,7 +524,7 @@ const GraduateDiplomaPage = () => {
           {/* Sidebar Area */}
           <aside className="w-full lg:w-[380px] space-y-6">
             <div className="flex flex-col gap-4 sticky top-24">
-              <Button className="w-full h-16 bg-[#008080] hover:bg-[#006666] text-lg font-black uppercase tracking-widest rounded-none shadow-xl">
+              <Button className="w-full h-16 bg-orange-500 hover:bg-[#006666] text-lg font-black uppercase tracking-widest rounded-none shadow-xl">
                 Enquire Now
               </Button>
               <Button className="w-full h-16 bg-[#E67E22] hover:bg-[#d3731f] text-lg font-black uppercase tracking-widest rounded-none shadow-xl">
@@ -534,7 +534,7 @@ const GraduateDiplomaPage = () => {
               <Card className="rounded-none border-none bg-slate-50 shadow-sm mt-4">
                 <CardContent className="p-6 space-y-6">
                   <div>
-                    <h4 className="text-xs font-bold text-[#008080] uppercase tracking-tighter mb-2 border-b pb-1">
+                    <h4 className="text-xs font-bold text-orange-500 uppercase tracking-tighter mb-2 border-b pb-1">
                       Course Duration
                     </h4>
                     <div className="flex items-center gap-2 text-slate-800">
@@ -544,7 +544,7 @@ const GraduateDiplomaPage = () => {
                   </div>
 
                   <div>
-                    <h4 className="text-xs font-bold text-[#008080] uppercase tracking-tighter mb-2 border-b pb-1">
+                    <h4 className="text-xs font-bold text-orange-500 uppercase tracking-tighter mb-2 border-b pb-1">
                       Support Services
                     </h4>
                     <ul className="text-xs space-y-2 text-slate-600">

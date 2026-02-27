@@ -68,7 +68,6 @@ const menuData = [
 ];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
   return (
     <header className="w-full bg-white border-b sticky top-0 z-[100]">
       <div className="hidden lg:block border-b py-2">
@@ -153,7 +152,7 @@ export default function Navbar() {
           <Button
             asChild
             className="bg-orange-500 hover:bg-[#006666] text-white rounded-full px-8 py-5 font-bold uppercase text-sm ml-4">
-            <Link href="/apply">Apply Now</Link>
+            <Link href="/contact-us">Apply Now</Link>
           </Button>
         </div>
 
@@ -202,7 +201,7 @@ export default function Navbar() {
               <Button
                 asChild
                 className="w-full bg-orange-500 mt-6 font-bold uppercase">
-                <Link href="/apply">Apply Now</Link>
+                <Link href="/contact-us">Apply Now</Link>
               </Button>
             </SheetContent>
           </Sheet>

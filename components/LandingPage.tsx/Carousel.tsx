@@ -16,15 +16,17 @@ import {
 const sliderData = [
   {
     id: 1,
-    title: "Located in Your Dream City Sydney",
+    title: "Located in Adelaide, South Australia",
     image: "/images/image-12.jpeg",
     buttonText: "KNOW MORE",
+    buttonLink: "/contact-us",
   },
   {
     id: 2,
     title: "Our Experts Instruction for Your Bright Future",
     image: "/images/image-10.jpeg",
     buttonText: "KNOW MORE",
+    buttonLink: "/contact-us",
   },
 ];
 
@@ -71,7 +73,6 @@ export function HeroSlider() {
           ))}
         </CarouselContent>
 
-        {/* Navigation Arrows positioned within the container */}
         <CarouselPrevious className="left-8 h-10 w-10 border-white/20 bg-black/10 text-white hover:bg-black/40" />
         <CarouselNext className="right-8 h-10 w-10 border-white/20 bg-black/10 text-white hover:bg-black/40" />
       </Carousel>
